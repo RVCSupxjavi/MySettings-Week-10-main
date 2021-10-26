@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MySettings_Week_10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7uM-ae-eEk">
+                                <rect key="frame" x="82" y="44" width="250" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="wqX-8Y-VX8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R18-Fj-09w">
+                                <rect key="frame" x="82" y="86" width="250" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="5yI-l1-dg5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpT-Ae-Ya4">
+                                <rect key="frame" x="179" y="355" width="56" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="tpz-nS-31V"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="btnSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WGI-6V-1bs"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="4lJ-hZ-W8a">
+                                <rect key="frame" x="82" y="185" width="250" height="162"/>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-1925038800">
+                                    <!--1940-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="662641200">
+                                    <!--2021-12-31 11:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Discord Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7hk-Zp-UdQ">
+                                <rect key="frame" x="82" y="128" width="250" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="s2s-Vm-vjo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7uM-ae-eEk" firstAttribute="trailing" secondItem="R18-Fj-09w" secondAttribute="trailing" id="3zQ-ky-E8X"/>
+                            <constraint firstItem="4lJ-hZ-W8a" firstAttribute="top" secondItem="7hk-Zp-UdQ" secondAttribute="bottom" constant="23" id="9W4-kX-pKU"/>
+                            <constraint firstItem="4lJ-hZ-W8a" firstAttribute="centerX" secondItem="YpT-Ae-Ya4" secondAttribute="centerX" id="GpS-9u-lF9"/>
+                            <constraint firstItem="7uM-ae-eEk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="I0C-8I-1nf"/>
+                            <constraint firstItem="7uM-ae-eEk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OKe-aL-jEd"/>
+                            <constraint firstItem="7hk-Zp-UdQ" firstAttribute="leading" secondItem="4lJ-hZ-W8a" secondAttribute="leading" id="VfA-LL-B0o"/>
+                            <constraint firstItem="7hk-Zp-UdQ" firstAttribute="top" secondItem="R18-Fj-09w" secondAttribute="bottom" constant="8" id="Vzq-9K-fGI"/>
+                            <constraint firstItem="YpT-Ae-Ya4" firstAttribute="top" secondItem="4lJ-hZ-W8a" secondAttribute="bottom" constant="8" id="W54-qT-APl"/>
+                            <constraint firstItem="7uM-ae-eEk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Wmv-To-g7Z"/>
+                            <constraint firstItem="R18-Fj-09w" firstAttribute="trailing" secondItem="7hk-Zp-UdQ" secondAttribute="trailing" id="cgm-JM-5ad"/>
+                            <constraint firstItem="7uM-ae-eEk" firstAttribute="leading" secondItem="R18-Fj-09w" secondAttribute="leading" id="fFo-2H-Rwm"/>
+                            <constraint firstItem="R18-Fj-09w" firstAttribute="top" secondItem="7uM-ae-eEk" secondAttribute="bottom" constant="8" id="fQA-Xw-1rN"/>
+                            <constraint firstItem="7hk-Zp-UdQ" firstAttribute="trailing" secondItem="4lJ-hZ-W8a" secondAttribute="trailing" id="knr-55-j6V"/>
+                            <constraint firstItem="R18-Fj-09w" firstAttribute="leading" secondItem="7hk-Zp-UdQ" secondAttribute="leading" id="wiN-EN-afV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YpT-Ae-Ya4" secondAttribute="bottom" constant="476" id="xrA-px-Knc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datepicker" destination="4lJ-hZ-W8a" id="P4q-g9-tCt"/>
+                        <outlet property="txtDiscord" destination="7hk-Zp-UdQ" id="29f-Ow-SB2"/>
+                        <outlet property="txtEmail" destination="R18-Fj-09w" id="NL3-sW-466"/>
+                        <outlet property="txtFullName" destination="7uM-ae-eEk" id="uyb-wN-7qt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="58.928571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
